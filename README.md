@@ -3,6 +3,10 @@
 [![mvn](https://github.com/yegor256/hangman/actions/workflows/mvn.yml/badge.svg)](https://github.com/yegor256/hangman/actions/workflows/mvn.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/hangman/blob/master/LICENSE.txt)
 
+Yugar Bugayenko's Hangman Tutorial. 
+
+This is oop and elegant version of forked project.
+
 [Hangman](https://en.wikipedia.org/wiki/Hangman_%28game%29) is a words
 guessing game for one player. The computer guesses a word and the user
 has to suggest letters one by one. Every time the word contains a letter,
