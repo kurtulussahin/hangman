@@ -20,18 +20,18 @@ class HangmanCLI {
         try (PrintStream out = new PrintStream(output);
              Scanner scanner = new Scanner(input)) {
             HangmanGame currentGame = game;
-            while (!currentGame.isGameOver()) {
+            while (!currentGame.gameOver()) {
                 out.print("Guess a letter: ");
                 char guess = scanner.next().charAt(0);
                 currentGame = currentGame.playRound(guess, out);
-                if(currentGame.isWon()) {
+                if(currentGame.winning()) {
                     break;
                 }
                 out.println("The word: " + currentGame.maskedWord());
                 currentGame.printMistakes(out);
 
             }
-            out.println(currentGame.isWon() ? "You won!" : "You lost.");
+            out.println(currentGame.winning() ? "You won!" : "You lost.");
         }
     }
 }

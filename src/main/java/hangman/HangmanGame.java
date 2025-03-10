@@ -27,11 +27,11 @@ class HangmanGame {
         return new HangmanGame(newWord, maxMistakes, newMistakes);
     }
 
-    public boolean isGameOver() {
+    public boolean gameOver() {
         return  mistakes >= maxMistakes;
     }
 
-    public boolean isWon() {
+    public boolean winning() {
         return word.isFullyRevealed();
     }
 
